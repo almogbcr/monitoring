@@ -1,0 +1,3 @@
+helm upgrade --install loki grafana/loki `
+  -n monitor-dev `
+  -f .\values-loki-dev.yaml
