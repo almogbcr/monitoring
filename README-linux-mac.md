@@ -35,7 +35,7 @@ helm repo update
 ## 2) יצירת Namespace
 
 ```bash
-kubectl create namespace monitor-dev --dry-run=client -o yaml | kubectl apply -f -
+kubectl apply -f charts\monitor\templates\namespace-dev.yaml
 ```
 ## 3) התקנת Loki דרך הצ'ארט המקומי (מומלץ)
 
